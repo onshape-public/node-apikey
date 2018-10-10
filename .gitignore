@@ -20,3 +20,4 @@ env
 # intellij
 *.idea*
 
+test/apikey.js
