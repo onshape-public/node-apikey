@@ -6,13 +6,6 @@ var querystring = require('querystring');
 var fs = require('fs');
 var pathModule = require('path');
 
-var apikey = null;
-try {
-  apikey = require('../config/apikey.js');
-} catch (e) {
-  util.error(errors.credentialsFileError);
-}
-
 // creates random 25-character string
 var buildNonce = function () {
   var chars = [
@@ -28,7 +21,7 @@ var buildNonce = function () {
   return nonce;
 }
 
-module.exports = (function (creds) {
+module.exports = function (creds) {
   var protocol = null;
   // basic error checking on creds
   if (typeof creds.baseUrl !== 'string' ||
@@ -372,4 +365,4 @@ module.exports = (function (creds) {
     delete: del,
     upload: upload
   };
-})(apikey);
+};
