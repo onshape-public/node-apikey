@@ -1,4 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - '8.12.0'
+- 8.12.0
+before_install:
+- openssl aes-256-cbc -K $encrypted_d030a70b739c_key -iv $encrypted_d030a70b739c_iv
+  -in apikey.js.enc -out test/apikey.js -d
