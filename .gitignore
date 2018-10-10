@@ -17,10 +17,6 @@ __pycache__
 .eggs
 env
 
-# api keys
-node/config/apikey.js
-python/creds.json
-
 # intellij
 *.idea*
 
