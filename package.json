@@ -2,7 +2,6 @@
   "name": "@onshape/apikey",
   "version": "1.0.0-1",
   "description": "Sample application using API keys",
-  "private": true,
   "sideEffects": false,
   "license": "MIT",
   "author": {
