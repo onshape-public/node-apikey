@@ -5,3 +5,11 @@ node_js:
 before_install:
 - openssl aes-256-cbc -K $encrypted_d030a70b739c_key -iv $encrypted_d030a70b739c_iv
   -in apikey.js.enc -out test/apikey.js -d
+deploy:
+  provider: npm
+  email: api-support@onshape.com
+  api_key:
+    secure: aJtJ90whVThcXkVZEX/cHHMM4zeWXFrerNYHVEjTFM2AU18TMo9o2cSIkARtqsQvLfQ9SIXAV8xJzAqsOKzsKX4D5JHRLvIY6HNlw6RPn1yH5vjfMObRMcSrys1QU+lF7CeRrGj8esaJaPgLENcZaPYBSBEK0VhPpEqtSzpR6fTV4rEASg9ralUCnANoWf5AkFX3eYWgq7zZZMNJpKgiR6U07xANA8HWs72kC6mhUyedB4MYvVQVHLbHBtNEMSASq05rCE9oxRwvIGoBGqbdKlCyZyFDnaeuPVbo/rstDtkKk/N73S/iMVjAkAhcEqGv3awURv2IqnCRZIydC00jSnp/6ulKg1suDVWjsijlgmwokMCbqRF78g07ycTcPC/2Rl9RRN+TUpf/mMS1+FmQhyl6v5dEbeW4+h92ef49PrQ6wRiZRKUKbzEOa5V5v9f7RgUEZ/Iz34d6SUfEgDrn5bjXNqZrz6pyfEL0f1XQ9spdGnmFZ7FbFYs0CNLeV+G9rccXfS5rUbrY21dmRQU5Z6ygGqFa8DuWs2QveGY9n6cinQTQ/gw645R+ZYbq2SrvpoCbCEH0IqTcQ15Ob5R7//k1QfU2eEMSuqmhBRC25t5+cynrfQEf7dDGFBxOnTH4R3+WobSYtpU8tSMcjSbLYfuX8oW8gRgnYE1jKhaW4hQ=
+  on:
+    tags: true
+    repo: onshape-public/node-apikey
