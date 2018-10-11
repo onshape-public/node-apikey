@@ -1,6 +1,6 @@
 {
   "name": "@onshape/apikey",
-  "version": "1.0.0-0",
+  "version": "1.0.1",
   "description": "Sample application using API keys",
   "private": true,
   "sideEffects": false,
@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/onshape-public/apikey"
+    "url": "https://github.com/onshape-public/node-apikey"
   },
-  "main": "./lib/index.js",
+  "main": "./index.js",
   "files": [
     "/lib"
   ]
